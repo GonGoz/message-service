@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${MESSAGES_DB_HOST}:${MESSAGES_DB_PORT}/${MESSAGES_DB_NAME}
+    username: ${MESSAGES_DB_USER}
+    password: ${MESSAGES_DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI}
+  instance:
+    preferIpAddress: true
